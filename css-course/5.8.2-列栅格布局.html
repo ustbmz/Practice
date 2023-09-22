@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        margin: 100px;
+        height: 352px;
+        width: 300px;
+        background-color: antiquewhite;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        'a1 a3 a3'
+        'a2 a3 a3'
+        'a4 a4 a5'
+        'a6 a7 a7';
+        gap: 8px;
+      }
+      .main div {
+        background-color: pink;
+        border: 1px solid black;
+      }
+
+      .main div:nth-of-type(1) {
+        grid-area: a1;
+      }
+      .main div:nth-of-type(2) {
+        grid-area: a2;
+      }
+      .main div:nth-of-type(3) {
+        grid-area: a3;
+      }
+      .main div:nth-of-type(4) {
+        grid-area: a4;
+      }
+      .main div:nth-of-type(5) {
+        grid-area: a5;
+      }
+      .main div:nth-of-type(6) {
+        grid-area: a6;
+      }
+      .main div:nth-of-type(7) {
+        grid-area: a7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+    </div>
+  </body>
+</html>

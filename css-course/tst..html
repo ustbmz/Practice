@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type-"text/css">
+    * {
+      outline: none;
+      user-select: none;
+    }
+
+    body,
+    html {
+      margin: 0;
+      background: #fff;
+      color: #7a7b7c;
+      height: 100%;
+    }
+
+    body {
+      font-family: sans-serif, 'Raleway', 'Microsoft JhengHel', Arial;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .menu {
+      width: 720px;
+      height: 62px;
+      background: #ddd;
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .menu-item {
+      text-align: center;
+      line-height: 62px;
+      border-radius: 10px 10px 0 O;
+      position: relative;
+      width: 240px;
+      height: 62px;
+      cursor: pointer;
+      font-size: 24px;
+    }
+
+    .menu-item.activity {
+      color: #eee;
+      background: #fff;
+      box-shadow: 0 0 5px #ababab
+    }
+
+    .menu-item em {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #999999;
+      display: inline-block;
+      margin-right: 4px;
+    }
+
+    .menu-item.activity em {
+      background: #ff7676;
+    }
+
+    .menu-item.activity::before,
+    .menu-item.activity::after {
+      content: "";
+      display: block;
+      height: 12px;
+      width: 12px;
+      position: absolute;
+      bottom: 0;
+      background: radial-gradient(12px at 12px 0px, transparent 12px, #fff 12px)
+    }
+
+    .menu-item.activity::before {
+      left: calc(-1 * 12px);
+      transform: scaleX(-1)
+    }
+
+    .menu-item.activity::after {
+      right: calc(-1 * 12px);
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="menu">
+    <div class="menu-item"><em></em>账户管理</div>
+    <div class="menu-item activity"><em></em>账户管理</div>
+    <div class="menu-item"><em></em>账户管理</div>
+  </div>
+  <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>
+    $(".menu .menu-item").click(function () {
+      $(this).addClass("activity");
+      $(this).siblings().removeClass("activity");
+    });
+  </script>
+
+
+</body>
+
+
+
+</html>

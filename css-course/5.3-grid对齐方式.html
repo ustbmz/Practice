@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        width: 500px;
+        height: 500px;
+        background-color: antiquewhite;
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        /* 子项小于单元格的对齐方式 */
+        justify-items: start;
+        align-items: end;
+        /* 缩写 */
+        place-items: end start;
+
+        /* 对整个grid元素的对齐方式 */
+        /* align-content: end;
+        justify-content: space-evenly;
+        place-content: end space-evenly; */
+      }
+
+      .main div {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        border: 1px solid rebeccapurple;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+    </div>
+  </body>
+</html>
+
+<style scoped></style>

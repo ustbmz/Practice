@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./iconfont.css" />
+    <link rel="stylesheet" href="./reset.css" />
+    <style>
+      .nav {
+        position: relative;
+        background-color: #fff;
+        border: 1px solid #ff6a00;
+        width: 263px;
+        height: 60vh;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      .nav > li:hover {
+        background: #ff6801;
+      }
+      .nav li {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin: 10px;
+        line-height: 45px;
+      }
+      .nav-menu {
+        position: absolute;
+        left: 265px;
+        top: 0;
+        background-color: #fff;
+        display: none;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: 200px;
+        grid-auto-columns: 200px;
+        grid-auto-flow: column;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        gap: 20px;
+      }
+
+      .nav > li:hover .nav-menu {
+        display: grid;
+      }
+
+      .nav-menu li {
+        width: 200px;
+        height: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="nav">
+      <li>
+        <div>
+          <a href="#">手机</a>
+        </div>
+        <i class="iconfont icon-right-arrow"></i>
+        <ul class="nav-menu">
+          <li>K40</li>
+          <li>K40</li>
+          <li>K40</li>
+          <li>K40</li>
+          <li>K40</li>
+          <li>K40</li>
+          <li>K40</li>
+          <li>K40</li>
+          <li>K40</li>
+          <li>K40</li>
+          <li>K40</li>
+          <li>K40</li>
+          <li>K40</li>
+          <li>K40</li>
+          <li>K40</li>
+          <li>K40</li>
+          <li>K40</li>
+        </ul>
+      </li>
+      <li>
+        <div>
+          <a href="#">电视</a>
+        </div>
+        <i class="iconfont icon-right-arrow"></i>
+      </li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        display: flex;
+        background-color: aquamarine;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+      }
+      .box2 {
+        display: flex;
+        background-color: pink;
+        width: 200px;
+        height: 200px;
+        flex-wrap: wrap;
+        align-content: center;
+      }
+      /* 只能用于一行文字居中 */
+      .box3 {
+        display: flex;
+        background-color: pink;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+      }
+      /* 多行文字居中 */
+      .box4 {
+        display: flex;
+        background-color: pink;
+        width: 200px;
+        height: 200px;
+        display: table-cell;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">123456</div>
+    <div class="box2">123456</div>
+    <div class="box3">123456123456123456</div>
+    <div class="box4">123456123456123456123456123456123456123456123456</div>
+  </body>
+</html>

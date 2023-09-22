@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .row {
+        background-color: antiquewhite;
+        gap: 5px;
+      }
+      .row div {
+        background-color: pink;
+        border: 1px solid black;
+        grid-area: auto/auto/auto/span 12;
+      }
+      input{
+        display: none;
+      }
+      input:checked + ul{
+        display: block;
+      }
+      span {
+        display: none;
+      }
+      @media (max-width: 700px) {
+        ul {
+          display: none;
+        }
+        span {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <label for="menu">
+      <span>菜单展示</span>
+    </label>
+    <input id="menu" type="checkbox" />
+    <ul>
+      <li>首页</li>
+      <li>哈哈</li>
+      <li>嘻嘻</li>
+      <li>嘿嘿</li>
+      <li>呕~</li>
+    </ul>
+  </body>
+</html>
